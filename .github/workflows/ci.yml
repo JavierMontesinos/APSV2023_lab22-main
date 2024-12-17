@@ -32,7 +32,7 @@ jobs:
 
       run: mvn -B compile --file pom.xml
 
-verify-and-package:
+  verify-and-package:
 
     needs: build
 
@@ -66,7 +66,7 @@ verify-and-package:
 
           registry: ghcr.io
 
-          username: "JavierMontesinos"
+          username: "javiermontesinos"
 
           password: ${{ secrets.PAT }}
 
@@ -82,4 +82,4 @@ verify-and-package:
 
           push: true
 
-          tags: ghcr.io/JavierMontesinos/tos:latest
+          tags: ghcr.io/javiermontesinos/tos:latest
